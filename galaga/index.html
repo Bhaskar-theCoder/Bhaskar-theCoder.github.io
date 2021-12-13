@@ -7,6 +7,7 @@
         <style>
             body
             {
+                user-select: none;
                 overflow: hidden;
                 background-repeat: no-repeat;
                 background-image: url(res/images/darksky.jpg);
@@ -15,8 +16,8 @@
             #shooter-launcher
             {
                 position: absolute;
-                top: 650px;
-                left: 750px;
+                top: 87%;
+                left: 50%;
                 width: 50px;
                 height: 75px;
                 background-repeat: no-repeat;
@@ -47,8 +48,8 @@
             #e11
             {
                 position: absolute;
-                top:50px;
-                left:750px;
+                top:6.94%;
+                left:50%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -59,8 +60,8 @@
             #e21
             {
                 position: absolute;
-                top:100px;
-                left:680px;
+                top:13.88%;
+                left:45.75%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -71,8 +72,8 @@
             #e22
             {
                 position: absolute;
-                top:100px;
-                left:820px;
+                top:13.88%;
+                left:54.25%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -83,8 +84,8 @@
             #e31
             {
                 position: absolute;
-                top:150px;
-                left:610px;
+                top:20.82%;
+                left:41.5%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -95,8 +96,8 @@
             #e32
             {
                 position: absolute;
-                top:150px;
-                left:750px;
+                top:20.82%;
+                left:50%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -107,8 +108,8 @@
             #e33
             {
                 position: absolute;
-                top:150px;
-                left:890px;
+                top:20.82%;
+                left:58.5%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -119,8 +120,8 @@
             #e41
             {
                 position: absolute;
-                top:200px;
-                left:540px;
+                top:27.76%;
+                left:37.25%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -131,8 +132,8 @@
             #e42
             {
                 position: absolute;
-                top:200px;
-                left:680px;
+                top:27.76%;
+                left:45.75%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -143,8 +144,8 @@
             #e43
             {
                 position: absolute;
-                top:200px;
-                left:820px;
+                top:27.76%;
+                left:54.25%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -155,8 +156,8 @@
             #e44
             {
                 position: absolute;
-                top:200px;
-                left:960px;
+                top:27.76%;
+                left:62.75%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -167,8 +168,8 @@
             #e51
             {
                 position: absolute;
-                top:250px;
-                left:470px;
+                top:34.7%;
+                left:33%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -179,8 +180,8 @@
             #e52
             {
                 position: absolute;
-                top:250px;
-                left:610px;
+                top:34.7%;
+                left:41.5%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -191,8 +192,8 @@
             #e53
             {
                 position: absolute;
-                top:250px;
-                left:750px;
+                top:34.7%;
+                left:50%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -203,8 +204,8 @@
             #e54
             {
                 position: absolute;
-                top:250px;
-                left:890px;
+                top:34.7%;
+                left:58.5%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -215,8 +216,8 @@
             #e55
             {
                 position: absolute;
-                top:250px;
-                left:1030px;
+                top:34.7%;
+                left:67%;
                 width:50px;
                 height:50px;
                 background-image: url(res/images/enemy.png);
@@ -280,6 +281,25 @@
                 line-height: 3;
                 padding: 0 2.5em;
             } */
+            .btns a{
+                margin: 0;
+                position: relative;
+                display:block;
+                text-decoration: none;
+                background-color: rgb(34, 148, 34);
+                color: black;
+                transition-duration: 0.4s;
+                font-weight: bolder;
+                font-size: x-large;
+                width:max-content;
+                padding: 14px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .btns a:hover{
+                background-color: darkgreen;
+                transform: translate(3px,6px);
+            }
         </style>
     </head>
     <body>
@@ -290,6 +310,10 @@
             <div class="popWindow">
                 <div class="win">
                     <p style="color: white; font-size: 300%; text-align: center;">YOU WIN!</p>
+                    <div>
+                    <div class="btns"><a href="index.html" style="float:left">Play Again</a></div>
+                    <div class="btns"><a href="#daskboard.html" style="float:right">Go To Home</a></div>
+                    </div>
                     <!-- <p style="text-align: center;">
                     <button class="btn" onclick="restart()">Restart</button>
                     </p> -->
@@ -415,7 +439,7 @@
                         {
                             //console.log("blast");
                             document.body.removeChild(blast);
-                        }, 1000);
+                        }, 500);
                         document.body.appendChild(blast);
                     }
                 } 
